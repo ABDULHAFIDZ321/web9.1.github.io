@@ -1,0 +1,706 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.splash-screen {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(245, 163, 40);
+  transition: 1s;
+}
+.judul-splash-screen {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+.text-splash-screen {
+  position: relative;
+  font-size: 60px;
+  font-family: 'Alkatra', cursive;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+.text-splash-screen.active {
+  bottom: 0;
+  opacity: 1;
+
+  transition: ease-in-out 0.5s;
+}
+.text-splash-screen.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.logo-nav {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.judul-nav {
+  font-family: 'Alkatra', cursive;
+  color: rgb(255, 177, 74);
+  text-align: center;
+  align-items: center;
+}
+.isi-nav {
+  height: 20px;
+  margin-left: 751px;
+}
+.isi-navbar {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Alkatra', cursive;
+  font-weight: 800;
+  color: rgb(255, 177, 74);
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+.isi-navbar::after {
+  content: '';
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.isi-navbar:hover {
+  color: #ffff;
+}
+.isi-navbar:hover::after {
+  width: 100%;
+}
+.isi-intro {
+  padding: 70px;
+  text-align: center;
+}
+.judul-intro {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px;
+  color: rgb(245, 163, 40);
+}
+.img-intro {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  padding: 40px;
+}
+.description-intro {
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(245, 163, 40);
+  font-weight: 500px;
+}
+
+#jumbotron-1 {
+  background-color: #fff7d4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.isi-jumbotron-1 {
+  padding-bottom: 200px;
+}
+.judul-jumbotron-1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: capitalize;
+  font-weight: 800;
+  padding: 70px;
+  color: black;
+}
+
+.description-jumbotron-1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 40px;
+  color: black;
+}
+.card-jumbotron-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0 10px 0;
+}
+
+.card {
+  width: 200px;
+  padding: 18px;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid rgb(245, 163, 40);
+  background: transparent;
+
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 1s;
+}
+.card:hover {
+  width: 200px;
+
+  background-color: rgb(245, 163, 40);
+}
+
+.isi-card {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.isi-card:hover {
+  color: white;
+}
+
+/* .isi-card:hover {
+  color: rgb(185, 185, 185);
+  text-shadow: 0 0 10px #dadada, 0 0 20px #dadada, 0 0 40px #dadada, 0 0 80px #dadada, 0 0 120px #dadada;
+} */
+#praktek-ipa {
+  background-image: url(images/bg-5.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.memory-ipa {
+  padding-bottom: 70px;
+}
+.judul-ipa {
+  font-family: 'Alkatra', cursive;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  padding: 80px 0 80px 0;
+}
+.img-ipa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  transition: 0.5s;
+  padding: 20px;
+}
+.img-praktek-ipa {
+  width: 350px;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  border-radius: 20px;
+}
+.img-praktek-ipa:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  transition: 1s;
+}
+#hari-guru {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-7.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.judul-hari-guru {
+  color: white;
+}
+.img-hari-guru {
+  display: flex;
+  height: 25em;
+  gap: 20px;
+  width: 1000px;
+  padding: 80px 0 20px 0;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 2s;
+}
+.img-hari-guru > div {
+  flex: 2;
+
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.9s cubic-bezier(0.25, 0.4, 0.4, 1.4);
+}
+
+.img-hari-guru:hover::before {
+  border-radius: 20px;
+  transition: 2s;
+}
+.img-hari-guru > div:hover {
+  flex: 10;
+  border-radius: 20px;
+  transition: 1s;
+}
+.img-hari-guru:hover::after {
+  border-radius: 20px;
+  transition: 2s;
+}
+.judul-hari-guru {
+  font-family: 'Alkatra', cursive;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  padding: 80px 0 50px 0;
+}
+.img-guru {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 0 80px 0; */
+  width: 500px;
+}
+.img-hari-guru-utama {
+  display: block;
+  border: 3px solid white;
+  width: 500px;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  border-radius: 20px;
+}
+.content-hari-guru {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.content-hari-guru--blur {
+  backdrop-filter: blur(5px);
+  border: 3px solid white;
+}
+.content-hari-guru > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.content-hari-guru:hover {
+  border: 3px solid white;
+  opacity: 1;
+}
+.content-hari-guru:hover > * {
+  transform: translateY(0);
+}
+.judul-walas {
+  font-size: 22px;
+  font-weight: bold;
+}
+.deskripsi-walas-2 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+#hari-pahlawan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-8.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.judul-hari-pahlawan {
+  font-family: 'Alkatra', cursive;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  padding: 80px 0 60px 0;
+  color: white;
+}
+.img-pahlawan {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 0 80px 0; */
+  width: 500px;
+}
+.img-hari-pahlawan-utama {
+  display: block;
+  width: 500px;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  border-radius: 20px;
+}
+.content-hari-pahlawan {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.content-hari-pahlawan--blur {
+  backdrop-filter: blur(5px);
+}
+.content-hari-pahlawan > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.content-hari-pahlawan:hover {
+  opacity: 1;
+}
+.content-hari-pahlawan:hover > * {
+  transform: translateY(0);
+}
+.judul-pahlawan {
+  font-size: 22px;
+  font-weight: bold;
+}
+.deskripsi-pahlawan {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i {
+  top: 65%;
+  height: 44px;
+  width: 44px;
+  color: #343f4f;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover {
+  background: #f2f2f2;
+}
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img {
+  pointer-events: none;
+}
+.carousel .isi-gambar-carousel {
+  border-radius: 20px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+#bukber{
+  background-image: url(images/bg-9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title-bukber {
+  font-family: 'Alkatra', cursive;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  padding: 80px 0 60px 0;
+  color: black;
+}
+.img-bukber {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 0 80px 0; */
+  width: 500px;
+  
+}
+.img-bukber-utama {
+  display: block;
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  aspect-ratio: 2/2;
+  border-radius: 20px;
+}
+.content-bukber {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.content-bukber--blur {
+  backdrop-filter: blur(5px);
+}
+.content-bukber > * {
+  transform: translateY(20px);
+  transition: transform 0.5s;
+}
+.content-bukber:hover {
+  opacity: 1;
+}
+.content-bukber:hover > * {
+  transform: translateY(0);
+}
+.judul-bukber {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.deskripsi-bukber {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.img-bukber-bu-endang {
+  display: flex;
+  height: 25em;
+  gap: 20px;
+  width: 1200px;
+  padding: 80px 0 20px 0;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 2s;
+}
+.img-bukber-bu-endang > div {
+  flex: 2;
+
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.9s cubic-bezier(0.25, 0.4, 0.4, 1.4);
+}
+
+.img-bukber-bu-endang:hover::before {
+  border-radius: 20px;
+  transition: 2s;
+}
+.img-bukber-bu-endang > div:hover {
+  flex: 10;
+  border-radius: 20px;
+  transition: 1s;
+}
+.img-bukber-bu-endang:hover::after {
+  border-radius: 20px;
+  transition: 2s;
+}
+footer {
+  text-align: center;
+  padding: 70px;
+  background-color: #f0eb8d;
+}
+.text-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  padding: 50px;
+}
+
+.last-text-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: rgb(255, 145, 0);
+  padding-top: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 60px;
+}
+
+.wrapper-footer {
+  display: inline-flex;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+}
+.wrapper-footer .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon .span-footer {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon .span-footer #i-footer {
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper-footer .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon:hover .span-footer {
+  color: #fff;
+}
+.wrapper-footer .icon:hover .span-footer,
+.wrapper-footer .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper-footer .facebook:hover .span-footer,
+.wrapper-footer .facebook:hover .tooltip,
+.wrapper-footer .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.wrapper-footer .twitter:hover .span-footer,
+.wrapper-footer .twitter:hover .tooltip,
+.wrapper-footer .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.wrapper-footer .instagram:hover .span-footer,
+.wrapper-footer .instagram:hover .tooltip,
+.wrapper-footer .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+.wrapper-footer .youtube:hover .span-footer,
+.wrapper-footer .youtube:hover .tooltip,
+.wrapper-footer .youtube:hover .tooltip:before {
+  background: #de463b;
+}
