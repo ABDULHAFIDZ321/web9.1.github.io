@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,20 +46,22 @@
     <main>
       <section id="jumbotron-1">
         <div class="isi-jumbotron-1">
-          <h2 class="judul-jumbotron-1">isi website</h2>
-          <p class="description-jumbotron-1">website ini berisi kenangan foto foto kelas 9.1,<span style="color: rgb(245, 163, 40); font-weight: 500; font-size: 22px">semoga kalian suka dengan wesite ini</span></p>
+          <h2 class="judul-jumbotron-1" data-aos="fade-down">isi website</h2>
+          <p class="description-jumbotron-1" data-aos="fade-up" data-aos-duration="1300">
+            website ini berisi kenangan foto foto kelas 9.1,<span style="color: rgb(245, 163, 40); font-weight: 500; font-size: 22px">semoga kalian suka dengan wesite ini</span>
+          </p>
           <div class="card-jumbotron-1">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
               <a class="isi-card" href="#praktek-ipa" data-text="Praktek Ipa">Praktek Ipa</a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
               <a class="isi-card" href="#hari-guru" data-text="Class Meet">Hari Guru</a>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
               <a class="isi-card" href="#hari-pahlawan" data-text="Class Meet">Hari Pahlawan</a>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
               <a class="isi-card" href="" data-text="Foto Kelas">all-photo</a>
             </div>
           </div>
@@ -66,30 +69,30 @@
       </section>
       <section id="praktek-ipa">
         <div class="memory-ipa">
-          <h2 class="judul-ipa">Praktek <span style="color: rgb(255, 195, 82); font-weight: 1000; font-size: 35px">Ipa</span></h2>
+          <h2 class="judul-ipa" data-aos="fade-down" data-aos-duration="1000">Praktek <span style="color: rgb(255, 195, 82); font-weight: 1000; font-size: 35px">Ipa</span></h2>
 
           <div class="img-ipa">
-            <img class="img-praktek-ipa" src="images/ipa/ipa1.jpg" alt="" onclick="changeimage1(this)" onmouseout="changeimageback1(this)" />
-            <img class="img-praktek-ipa" src="images/ipa/ipa2.jpg" alt="" onclick="changeimage2(this)" onmouseout="changeimageback2(this)" />
-            <img class="img-praktek-ipa" src="images/ipa/ipa3.jpg" alt="" onclick="changeimage3(this)" onmouseout="changeimageback3(this)" />
-            <img class="img-praktek-ipa" src="images/ipa/ipa4.jpg" alt="" onclick="changeimage4(this)" onmouseout="changeimageback4(this)" />
-            <img class="img-praktek-ipa" src="images/ipa/ipa5.jpg" alt="" onclick="changeimage5(this)" onmouseout="changeimageback5(this)" />
+            <img class="img-praktek-ipa" src="images/ipa/ipa1.jpg" alt="" onclick="changeimage1(this)" onmouseout="changeimageback1(this)" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1200" />
+            <img class="img-praktek-ipa" src="images/ipa/ipa2.jpg" alt="" onclick="changeimage2(this)" onmouseout="changeimageback2(this)" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1200"/>
+            <img class="img-praktek-ipa" src="images/ipa/ipa3.jpg" alt="" onclick="changeimage3(this)" onmouseout="changeimageback3(this)" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1200"/>
+            <img class="img-praktek-ipa" src="images/ipa/ipa4.jpg" alt="" onclick="changeimage4(this)" onmouseout="changeimageback4(this)" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"/>
+            <img class="img-praktek-ipa" src="images/ipa/ipa5.jpg" alt="" onclick="changeimage5(this)" onmouseout="changeimageback5(this)" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200"/>
           </div>
         </div>
       </section>
 
       <section id="hari-guru">
         <div class="isi-hari-guru">
-          <h2 class="judul-hari-guru">Hari <span style="color: rgb(255, 195, 82); font-weight: 1000; font-size: 35px">Guru</span></h2>
+          <h2 class="judul-hari-guru" data-aos="fade-down">Hari <span style="color: rgb(255, 195, 82); font-weight: 1000; font-size: 35px">Guru</span></h2>
           <div class="foto-hari-guru">
             <div class="img-guru">
-              <img class="img-hari-guru-utama" src="images/hari-guru/foto-guru.jpg" alt="" />
+              <img class="img-hari-guru-utama" src="images/hari-guru/foto-guru.jpg" alt="" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"/>
               <div class="content-hari-guru content-hari-guru--blur">
                 <h2 class="judul-walas">Wali Kelas</h2>
                 <p class="deskripsi-walas-2">jadi,ini adalah wali kelas 9.1,namanya bu rahayu</p>
               </div>
             </div>
-            <div class="img-hari-guru">
+            <div class="img-hari-guru" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
               <!-- <img class="img-murid" src="images/hari-guru/hari-guru-1.jpg" alt="" />
               <img class="img-murid" src="images/hari-guru/hari-guru-2.jpg" alt="" />
               <img class="img-murid" src="images/hari-guru/hari-guru-3.jpg" alt="" />
@@ -104,10 +107,10 @@
         </div>
       </section>
       <section id="hari-pahlawan">
-        <h1 class="judul-hari-pahlawan">hari <span style="color: rgb(255, 195, 82)">pahlawan</span></h1>
+        <h1 class="judul-hari-pahlawan" data-aos="fade-down">hari <span style="color: rgb(255, 195, 82)">pahlawan</span></h1>
         <div class="foto-pahlawan">
           <div class="img-pahlawan">
-            <img class="img-hari-pahlawan-utama" src="images/hari-pahlawan/Hari pahlawan/pahlawan12.jpg" alt="" />
+            <img class="img-hari-pahlawan-utama" src="images/hari-pahlawan/Hari pahlawan/pahlawan12.jpg" alt="" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"/>
             <div class="content-hari-pahlawan content-hari-pahlawan--blur">
               <h2 class="judul-pahlawan">pahlawan</h2>
               <p class="deskripsi-pahlawan">ini adalah pahlawan yang mewakili kelas kita <br />(imam bonjol dan cut nyak dien)</p>
@@ -134,22 +137,22 @@
         </article>
       </section>
       <section id="bukber">
-        <h1 class="title-bukber">buka <span style="color: rgb(255, 195, 82)">bersama</span></h1>
+        <h1 class="title-bukber" data-aos="fade-down" >buka <span style="color: rgb(255, 195, 82)">bersama</span></h1>
         <div class="foto-bukber">
           <div class="img-bukber">
-            <img class="img-bukber-utama" src="images/bukber-ramadhan/bukber-1-utama.jpg" alt="" />
+            <img class="img-bukber-utama" src="images/bukber-ramadhan/bukber-1-utama.jpg" alt="" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200"/>
             <div class="content-bukber content-bukber--blur">
               <h2 class="judul-bukber">bukber</h2>
               <p class="deskripsi-bukber">foto buka bersama di bu endang</p>
             </div>
           </div>
-          <div class="img-bukber-bu-endang">
-            <div style="background-image: url('images/bukber-ramadhan/bukber-1.jpg')" ></div>
+          <div class="img-bukber-bu-endang" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="300">
+            <div style="background-image: url('images/bukber-ramadhan/bukber-1.jpg')"></div>
             <div style="background-image: url('images/bukber-ramadhan/bukber-2.jpg')"></div>
             <div style="background-image: url('images/bukber-ramadhan/bukber-3.jpg')"></div>
             <div style="background-image: url('images/bukber-ramadhan/bukber-4.jpg')"></div>
-        
-         <!-- <img src="images/bukber-ramadhan/bukber-1.jpg" alt="">
+
+            <!-- <img src="images/bukber-ramadhan/bukber-1.jpg" alt="">
          <img src="images/bukber-ramadhan/bukber-2.jpg" alt="">
          <img src="images/bukber-ramadhan/bukber-3.jpg" alt="">
          <img src="images/bukber-ramadhan/bukber-4.jpg" alt=""> -->
@@ -160,11 +163,10 @@
 
     <footer id="footer">
       <article class="footer">
-        <h2 class="text-footer">semoga website ini bisa menjadi kenangan untuk kita semua</h2>
-      
+        <h2 class="text-footer" data-aos="fade-down">semoga website ini bisa menjadi kenangan untuk kita semua</h2>
       </article>
-    
-      <div class="wrapper-footer">
+
+      <div class="wrapper-footer" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
         <div class="icon facebook">
           <div class="tooltip">Facebook</div>
           <span class="span-footer"><i id="i-footer" class="fab fa-facebook-f"></i></span>
@@ -184,9 +186,13 @@
         </div>
       </div>
       <article class="footer">
-        <h2 class="last-text-footer">thank youuuuuuuuu</h2>
+        <h2 class="last-text-footer" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">thank youuuuuuuuu</h2>
       </article>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
