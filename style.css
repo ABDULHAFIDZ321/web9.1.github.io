@@ -52,23 +52,27 @@ header {
   background-attachment: fixed;
 }
 .navbar {
-  position: fixed;
+  
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 17px;
-  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0;
 }
-.isi-nav1 {
+.navbar,.isi-nav1{
   display: flex;
-  gap: 30px;
+}
+.navbar,.isi-nav2{
+  display: flex;
+  list-style-type: none;
+  
+}
+.isi-nav1{
+  gap: 20px;
+}
+.isi-nav2{
+  justify-content: space-between;
+  width: 25%;
 }
 
-.isi-nav2 {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
 .logo-nav {
   width: 50px;
   height: 50px;
@@ -77,7 +81,6 @@ header {
 .judul-nav {
   font-family: 'Alkatra', cursive;
   color: rgb(255, 177, 74);
-  text-align: center;
 }
 
 .isi-navbar {
@@ -87,7 +90,6 @@ header {
   font-weight: 800;
   color: rgb(255, 177, 74);
   font-size: 20px;
-  padding: 0 10px;
 }
 .isi-navbar::after {
   content: '';
@@ -433,7 +435,7 @@ header {
   max-width: 1200px;
   position: relative;
 }
-.wrapper i {
+.wrapper .fa-solid {
   top: 65%;
   height: 44px;
   width: 44px;
@@ -448,17 +450,17 @@ header {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active {
+.wrapper .fa-solid:active {
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover {
+.wrapper .fa-solid:hover {
   background: #f2f2f2;
 }
-.wrapper i:first-child {
+.wrapper .fa-solid:first-child {
   left: -22px;
   display: none;
 }
-.wrapper i:last-child {
+.wrapper .fa-solid:last-child {
   right: -22px;
 }
 .wrapper .carousel {
@@ -714,17 +716,19 @@ footer {
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
   .text-splash-screen {
     font-size: 30px;
   }
   .menu {
     display: block;
+    display: flex;
     font-size: 25px;
+    align-items: center;
   }
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-4.jpg);
-   
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -732,11 +736,19 @@ footer {
   }
   .navbar {
     background-color: #ffe194;
-    width: 100%;
+    
   }
   .judul-nav {
     color: #f97b22;
-    font-size: 25px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-nav{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
   }
   .isi-nav2 {
     position: absolute;
@@ -770,6 +782,64 @@ footer {
   .judul-intro {
     font-size: 20px;
     text-align: center;
+  }
+  .description-intro{
+    font-size:20px ;
+  }
+  .judul-jumbotron-1{
+    font-size: 25px;
+  }
+  .description-jumbotron-1{
+    font-size: 18px;
+  }
+  .judul-ipa,.span-judul-ipa{
+    font-size: 25px;
+  }
+  .judul-hari-guru,.span-judul-guru{
+    font-size: 25px;
+  }
+  .judul-hari-pahlawan,.span-judul-pahlawan{
+    font-size: 25px;
+  }
+  .title-bukber,.span-judul-bukber{
+    font-size: 25px;
+  }
+  .carousel{
+    width: 100vw;
+  }
+  #left{
+    font-size: 20px;
+    left: 0px;
+
+  }
+  #right{
+    font-size: 20px;
+    right: 0px;
     
+  }
+  .carousel .isi-gambar-carousel {
+    border-radius: 20px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 2);
+  }
+  
+  .img-hari-guru{
+    width: 100vh;
+  }
+  .img-bukber-bu-endang{
+    width: 100vh;
+  }
+  .img-bukber-child{
+    display: none;
+  }
+  .text-footer{
+    font-size: 20px;
+  }
+  .wrapper-footer{
+    display: flex;
+    justify-content: center;
   }
 }
