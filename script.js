@@ -130,3 +130,9 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+var menu =document.getElementById('menu')
+menu.onclick= function(){
+    var navbar = document.querySelector('.isi-nav2');
+    navbar.classList.toggle('active');
+}

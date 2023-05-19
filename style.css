@@ -4,6 +4,7 @@ html {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .splash-screen {
   position: fixed;
@@ -53,12 +54,21 @@ header {
 .navbar {
   position: fixed;
   display: flex;
-  gap: 30px;
   align-items: center;
-  padding: 15px;
-  transition: 0.5s;
+  justify-content: space-between;
+  padding: 17px;
+  width: 100%;
+}
+.isi-nav1 {
+  display: flex;
+  gap: 30px;
 }
 
+.isi-nav2 {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
 .logo-nav {
   width: 50px;
   height: 50px;
@@ -68,12 +78,8 @@ header {
   font-family: 'Alkatra', cursive;
   color: rgb(255, 177, 74);
   text-align: center;
-  align-items: center;
 }
-.isi-nav {
-  height: 20px;
-  margin-left: 751px;
-}
+
 .isi-navbar {
   position: relative;
   text-decoration: none;
@@ -81,8 +87,6 @@ header {
   font-weight: 800;
   color: rgb(255, 177, 74);
   font-size: 20px;
-  letter-spacing: 0.5px;
-  justify-content: flex-end;
   padding: 0 10px;
 }
 .isi-navbar::after {
@@ -96,10 +100,17 @@ header {
   transition: 0.5s;
 }
 .isi-navbar:hover {
-  color: #ffff;
+  color: #ffd95a;
 }
 .isi-navbar:hover::after {
   width: 100%;
+}
+.menu {
+  display: none;
+  align-items: center;
+  font-size: 35px;
+  cursor: pointer;
+  color: black;
 }
 .isi-intro {
   padding: 70px;
@@ -486,7 +497,7 @@ header {
     width: 100%;
   }
 }
-#bukber{
+#bukber {
   background-image: url(images/bg-9.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -507,7 +518,6 @@ header {
   margin-right: auto;
   /* padding: 0 0 80px 0; */
   width: 500px;
-  
 }
 .img-bukber-utama {
   display: block;
@@ -703,4 +713,63 @@ footer {
 .wrapper-footer .youtube:hover .tooltip,
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
+}
+@media only screen and (max-width: 700px) {
+  .text-splash-screen {
+    font-size: 30px;
+  }
+  .menu {
+    display: block;
+    font-size: 25px;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-4.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .navbar {
+    background-color: #ffe194;
+    width: 100%;
+  }
+  .judul-nav {
+    color: #f97b22;
+    font-size: 25px;
+  }
+  .isi-nav2 {
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 80px;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: 1.5s;
+  }
+  .li-nav {
+    padding: 20px 0;
+  }
+  .isi-nav2,
+  .li-nav {
+    width: 100%;
+    height: auto;
+
+    background-color: #f5f0bb;
+    transition: 0.5s;
+  }
+  .li-nav:hover {
+    background-color: #f6ffde;
+  }
+  .active {
+    opacity: 1;
+  }
+  .judul-intro {
+    font-size: 20px;
+    text-align: center;
+    
+  }
 }
