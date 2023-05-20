@@ -51,6 +51,10 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
+nav{
+  position: sticky;
+  top: 0;
+}
 .navbar {
   
   display: flex;
@@ -241,11 +245,13 @@ header {
   object-fit: cover;
   aspect-ratio: 3/2;
   border-radius: 20px;
+  transition: 1s;
+  transform: scale(0);
 }
 .img-praktek-ipa:hover {
-  transform: scale(1.2);
-  z-index: 2;
-  transition: 1s;
+  transform: scale(2.5);
+ 
+  
 }
 #hari-guru {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-7.jpg);
@@ -269,8 +275,8 @@ header {
   transition: 2s;
 }
 .img-hari-guru > div {
-  flex: 2;
-
+  flex: 4;
+  
   border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -779,6 +785,10 @@ footer {
   .active {
     opacity: 1;
   }
+  .li-active{
+   opacity: 0;
+   
+  }
   .judul-intro {
     font-size: 20px;
     text-align: center;
@@ -825,22 +835,31 @@ footer {
     margin-left: 14px;
     width: calc(100% / 2);
   }
-  .img-hari-guru-utama{
+  .img-hari-guru-utama,.img-hari-pahlawan-utama,.img-bukber-utama{
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .content-hari-guru{
+  .content-hari-guru,.content-hari-pahlawan,.content-bukber{
     width: 300px;  
+    
+    left: 100px;
+    overflow: hidden;
+    
   }
-  .judul-walas{
+  .judul-walas,.judul-pahlawan{
     font-size: 16px;
   }
-  .deskripsi-walas-2{
+  .deskripsi-walas-2,.deskripsi-pahlawan{
     font-size: 13px;
     text-align: center;
   }
   
   .img-hari-guru{
     width: 100vh;
+  }
+  .img-guru-child{
+    display: none;
   }
   .img-bukber-bu-endang{
     width: 100vh;
