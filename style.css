@@ -716,7 +716,7 @@ footer {
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
 }
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .text-splash-screen {
     font-size: 30px;
   }
@@ -824,6 +824,19 @@ footer {
     user-select: none;
     margin-left: 14px;
     width: calc(100% / 2);
+  }
+  .img-hari-guru-utama{
+    width: 300px;
+  }
+  .content-hari-guru{
+    width: 300px;  
+  }
+  .judul-walas{
+    font-size: 16px;
+  }
+  .deskripsi-walas-2{
+    font-size: 13px;
+    text-align: center;
   }
   
   .img-hari-guru{
