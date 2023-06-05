@@ -50,33 +50,27 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
-nav{
-  position: sticky;
-  top: 0;
+.nav {
+  position: fixed;
+  width: 100%;
 }
 .navbar {
-  
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
 }
-.navbar,.isi-nav1{
+.navbar .isi-nav1 {
   display: flex;
-}
-.navbar,.isi-nav2{
-  display: flex;
-  list-style-type: none;
-  
-}
-.isi-nav1{
   gap: 20px;
 }
-.isi-nav2{
-  justify-content: space-between;
-  width: 25%;
+.navbar .isi-nav2 {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
 }
-
 .logo-nav {
   width: 50px;
   height: 50px;
@@ -246,12 +240,10 @@ nav{
   aspect-ratio: 3/2;
   border-radius: 20px;
   transition: 1s;
-  transform: scale(0);
+  transform: scale(1);
 }
 .img-praktek-ipa:hover {
-  transform: scale(2.5);
- 
-  
+  transform: scale(1.2, 1.2);
 }
 #hari-guru {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-7.jpg);
@@ -276,7 +268,7 @@ nav{
 }
 .img-hari-guru > div {
   flex: 4;
-  
+
   border-radius: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -360,6 +352,57 @@ nav{
   font-weight: 500;
   padding: 20px;
   text-transform: capitalize;
+}
+.button-guru {
+  padding: 30px 0 30px 0;
+}
+.button-hari-guru .isi-button-hari-guru {
+  text-decoration: none;
+  color: black;
+}
+
+.button-hari-guru {
+  display: none;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #ffc26f;
+}
+
+.button-hari-guru:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #ffc26f;
+  box-shadow: 4px 5px 17px -4px #ffc26f;
+}
+
+.button-hari-guru::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffc26f;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-hari-guru:hover::before {
+  width: 250%;
 }
 
 #hari-pahlawan {
@@ -580,7 +623,7 @@ nav{
 .img-bukber-bu-endang {
   display: flex;
   height: 25em;
-  gap: 20px;
+  gap: 10px;
   width: 1200px;
   padding: 80px 0 20px 0;
   border-radius: 20px;
@@ -589,7 +632,7 @@ nav{
   transition: 2s;
 }
 .img-bukber-bu-endang > div {
-  flex: 2;
+  flex: 4;
 
   border-radius: 20px;
   background-position: center;
@@ -611,6 +654,58 @@ nav{
   border-radius: 20px;
   transition: 2s;
 }
+.button-bukber {
+  padding: 30px 0 30px 0;
+}
+.button-hari-bukber .isi-button-hari-bukber {
+  text-decoration: none;
+  color: black;
+}
+
+.button-hari-bukber {
+  display: none;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #ffc26f;
+}
+
+.button-hari-bukber:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #ffc26f;
+  box-shadow: 4px 5px 17px -4px #ffc26f;
+}
+
+.button-hari-bukber::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffc26f;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-hari-bukber:hover::before {
+  width: 250%;
+}
+
 footer {
   text-align: center;
   padding: 70px;
@@ -722,7 +817,7 @@ footer {
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
 }
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .text-splash-screen {
     font-size: 30px;
   }
@@ -732,17 +827,16 @@ footer {
     font-size: 25px;
     align-items: center;
   }
-  header {
+  /* header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-4.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
+  } */
   .navbar {
     background-color: #ffe194;
-    
   }
   .judul-nav {
     color: #f97b22;
@@ -751,7 +845,7 @@ footer {
     align-items: center;
     text-align: center;
   }
-  .logo-nav{
+  .logo-nav {
     width: 45px;
     height: 45px;
     border-radius: 100%;
@@ -782,50 +876,46 @@ footer {
   .li-nav:hover {
     background-color: #f6ffde;
   }
-  .active {
-    opacity: 1;
-  }
-  .li-active{
-   opacity: 0;
-   
-  }
+
   .judul-intro {
     font-size: 20px;
     text-align: center;
   }
-  .description-intro{
-    font-size:20px ;
+  .description-intro {
+    font-size: 20px;
   }
-  .judul-jumbotron-1{
+  .judul-jumbotron-1 {
     font-size: 25px;
   }
-  .description-jumbotron-1{
+  .description-jumbotron-1 {
     font-size: 18px;
   }
-  .judul-ipa,.span-judul-ipa{
+  .judul-ipa,
+  .span-judul-ipa {
     font-size: 25px;
   }
-  .judul-hari-guru,.span-judul-guru{
+  .judul-hari-guru,
+  .span-judul-guru {
     font-size: 25px;
   }
-  .judul-hari-pahlawan,.span-judul-pahlawan{
+  .judul-hari-pahlawan,
+  .span-judul-pahlawan {
     font-size: 25px;
   }
-  .title-bukber,.span-judul-bukber{
+  .title-bukber,
+  .span-judul-bukber {
     font-size: 25px;
   }
-  .carousel{
+  .carousel {
     width: 100vw;
   }
-  #left{
+  #left {
     font-size: 20px;
     left: 0px;
-
   }
-  #right{
+  #right {
     font-size: 20px;
     right: 0px;
-    
   }
   .carousel .isi-gambar-carousel {
     border-radius: 20px;
@@ -835,43 +925,137 @@ footer {
     margin-left: 14px;
     width: calc(100% / 2);
   }
-  .img-hari-guru-utama,.img-hari-pahlawan-utama,.img-bukber-utama{
+  .img-hari-guru-utama,
+  .img-hari-pahlawan-utama,
+  .img-bukber-utama {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
   }
-  .content-hari-guru,.content-hari-pahlawan,.content-bukber{
-    width: 300px;  
-    
+  .content-hari-guru,
+  .content-hari-pahlawan,
+  .content-bukber {
+    width: 300px;
+
     left: 100px;
-    overflow: hidden;
-    
+    overflow-x: hidden;
   }
-  .judul-walas,.judul-pahlawan{
+  .judul-walas,
+  .judul-pahlawan {
     font-size: 16px;
   }
-  .deskripsi-walas-2,.deskripsi-pahlawan{
+  .deskripsi-walas-2,
+  .deskripsi-pahlawan {
     font-size: 13px;
     text-align: center;
   }
-  
-  .img-hari-guru{
+
+  .img-hari-guru {
     width: 100vh;
   }
-  .img-guru-child{
+  .img-guru-child {
     display: none;
   }
-  .img-bukber-bu-endang{
+  .img-bukber-bu-endang {
     width: 100vh;
   }
-  .img-bukber-child{
+  .img-bukber-child {
     display: none;
   }
-  .text-footer{
+  .text-footer {
     font-size: 20px;
   }
-  .wrapper-footer{
+  .wrapper-footer {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .text-splash-screen {
+    font-size: 30px;
+  }
+  .nav {
+    position: fixed;
+
+    z-index: 999;
+  }
+  .menu {
+    display: block;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+  }
+  .navbar {
+    background-color: #ffe194;
+  }
+  .judul-nav {
+    color: #f97b22;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-nav {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
+  .navbar .isi-nav2{
+    gap: 0;
+  }
+  .isi-nav2 {
+    position: absolute;
+    overflow-x: hidden;
+    left: -500px;
+    top: 90px;
+    flex-direction: column;
+    text-align: center;
+
+    transition: 1.5s;
+    width: 70%;
+
+    text-align: center;
+    background-color: #f5f0bb;
+  }
+  .li-nav {
+    padding: 35px 0;
+  }
+  .li-nav:active {
+    background-color: #f6ffde;
+  }
+  .img-hari-guru-utama,
+  .img-hari-pahlawan-utama,
+  .img-bukber-utama {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-hari-guru,
+  .content-hari-pahlawan,
+  .content-bukber {
+    width: 200px;
+
+    left: 100px;
+    overflow-x: hidden;
+  }
+  .img-hari-guru {
+    display: none;
+  }
+  .button-hari-guru {
+    display: block;
+  }
+  .img-bukber-bu-endang {
+    display: none;
+  }
+  .button-hari-bukber {
+    display: block;
+  }
+  .text-footer {
+    font-size: 18px;
+  }
+  .wrapper-footer {
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
   }
 }
