@@ -433,6 +433,7 @@ header {
   object-fit: cover;
   aspect-ratio: 3/2;
   border-radius: 20px;
+  border: 3px solid white;
 }
 .content-hari-pahlawan {
   position: absolute;
@@ -577,6 +578,7 @@ header {
   object-fit: cover;
   aspect-ratio: 2/2;
   border-radius: 20px;
+  border: 3px solid white;
 }
 .content-bukber {
   position: absolute;
@@ -931,6 +933,7 @@ footer {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    
   }
   .content-hari-guru,
   .content-hari-pahlawan,
@@ -970,7 +973,7 @@ footer {
     justify-content: center;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
   .text-splash-screen {
     font-size: 30px;
   }
@@ -1023,19 +1026,53 @@ footer {
   .li-nav:active {
     background-color: #f6ffde;
   }
+  .carousel {
+    width: 400px;
+    transform: translateX(50px);
+  }
+  #left {
+    font-size: 20px;
+    left: 0px;
+  }
+  #right {
+    font-size: 20px;
+    right: 0px;
+  }
+  .carousel .isi-gambar-carousel {
+    border-radius: 20px;
+    
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 1);
+  }
   .img-hari-guru-utama,
-  .img-hari-pahlawan-utama,
-  .img-bukber-utama {
-    width: 200px;
+  .img-hari-pahlawan-utama{
+    width: 400px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
   }
   .content-hari-guru,
-  .content-hari-pahlawan,
-  .content-bukber {
-    width: 200px;
-
-    left: 100px;
+  .content-hari-pahlawan
+  {
+    width: 400px;
+    height: 300px;
+    left: 50px;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .img-bukber-utama{
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-bukber{
+    width: 400px;
+    height: 300px;
+    left: 50px;
+    text-align: center;
     overflow-x: hidden;
   }
   .img-hari-guru {
