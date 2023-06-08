@@ -8,7 +8,7 @@ html {
 }
 .splash-screen {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -710,7 +710,7 @@ header {
 
 footer {
   text-align: center;
-  padding: 70px;
+
   background-color: #f0eb8d;
 }
 .text-footer {
@@ -974,18 +974,21 @@ footer {
   }
 }
 @media screen and (min-width: 100px) and (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
   .text-splash-screen {
     font-size: 30px;
   }
   .nav {
     position: fixed;
 
-    z-index: 999;
+    z-index: 100;
   }
   .menu {
     display: block;
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
   }
   .navbar {
@@ -993,14 +996,14 @@ footer {
   }
   .judul-nav {
     color: #f97b22;
-    font-size: 23px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     text-align: center;
   }
   .logo-nav {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
   }
   .navbar .isi-nav2{
@@ -1026,8 +1029,15 @@ footer {
   .li-nav:active {
     background-color: #f6ffde;
   }
+  .judul-intro{
+    font-size: 22px;
+  }
+  .img-intro{
+    width: 200px;
+    height: 200px;
+  }
   .carousel {
-    width: 400px;
+    width: 300px;
     transform: translateX(50px);
   }
   #left {
@@ -1040,41 +1050,29 @@ footer {
   }
   .carousel .isi-gambar-carousel {
     border-radius: 20px;
-    
+    width: 300px;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
     width: calc(100% / 1);
   }
+  
   .img-hari-guru-utama,
-  .img-hari-pahlawan-utama{
-    width: 400px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+  .img-hari-pahlawan-utama, .img-bukber-utama{
+    width: 350px;
+    height: 200px;
+    
   }
   .content-hari-guru,
-  .content-hari-pahlawan
+  .content-hari-pahlawan,.content-bukber
   {
-    width: 400px;
-    height: 300px;
-    left: 50px;
+    width: 350px;
+    height: 200px;
+ 
     text-align: center;
-    overflow-x: hidden;
+    
   }
-  .img-bukber-utama{
-    width: 400px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content-bukber{
-    width: 400px;
-    height: 300px;
-    left: 50px;
-    text-align: center;
-    overflow-x: hidden;
-  }
+  
   .img-hari-guru {
     display: none;
   }
@@ -1091,7 +1089,7 @@ footer {
     font-size: 18px;
   }
   .wrapper-footer {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 50px;
     text-align: center;
   }
