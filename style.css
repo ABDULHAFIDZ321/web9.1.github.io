@@ -6,6 +6,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
 .splash-screen {
   position: fixed;
   z-index: 999;
@@ -50,11 +51,12 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  
+  height: 100vh;
 }
 .nav {
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .navbar {
   display: flex;
@@ -112,6 +114,9 @@ header {
   cursor: pointer;
   color: black;
 }
+/* #intro{
+  width: 100%;
+} */
 .isi-intro {
   padding: 70px;
   text-align: center;
@@ -133,7 +138,7 @@ header {
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
   color: rgb(245, 163, 40);
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 #jumbotron-1 {
@@ -152,7 +157,7 @@ header {
   font-family: 'Quicksand', sans-serif;
   text-transform: capitalize;
   font-weight: 800;
-  padding: 70px;
+  padding: 70px 10px 70px 10px;
   color: black;
 }
 
@@ -243,7 +248,7 @@ header {
   transform: scale(1);
 }
 .img-praktek-ipa:hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.2);
 }
 #hari-guru {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bg-7.jpg);
@@ -539,16 +544,12 @@ header {
 .carousel img:first-child {
   margin-left: 0px;
 }
-@media screen and (min-width:768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .carousel img {
     width: calc(100% / 2);
   }
 }
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
-}
+
 #bukber {
   background-image: url(images/bg-9.jpg);
   background-position: center;
@@ -809,6 +810,11 @@ footer {
 .wrapper-footer .twitter:hover .tooltip:before {
   background: #46c1f6;
 }
+.wrapper-footer .WhatsApp:hover .span-footer,
+.wrapper-footer .WhatsApp:hover .tooltip,
+.wrapper-footer .WhatsApp:hover .tooltip:before {
+  background: #1be046;
+}
 .wrapper-footer .instagram:hover .span-footer,
 .wrapper-footer .instagram:hover .tooltip,
 .wrapper-footer .instagram:hover .tooltip:before {
@@ -819,7 +825,10 @@ footer {
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+.img-guru-2,.img-pahlawan-2,.img-bukber-2{
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
   .text-splash-screen {
     font-size: 30px;
   }
@@ -854,6 +863,7 @@ footer {
   }
   .isi-nav2 {
     position: absolute;
+    
     height: 0;
     left: 0;
     right: 0;
@@ -933,7 +943,6 @@ footer {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    
   }
   .content-hari-guru,
   .content-hari-pahlawan,
@@ -965,6 +974,9 @@ footer {
   .img-bukber-child {
     display: none;
   }
+  .img-guru-2,.img-pahlawan-2,.img-bukber-2{
+    display: none;
+  }
   .text-footer {
     font-size: 20px;
   }
@@ -973,27 +985,25 @@ footer {
     justify-content: center;
   }
 }
-@media screen and (max-width: 600px) {
-  body{
-    overflow-x: hidden;
-    width: 100vw;
-  }
+@media screen and (max-width: 767px) {
   .text-splash-screen {
     font-size: 30px;
   }
   .nav {
     position: fixed;
-    width: 100vw;
+    /* width: 100%; */
     z-index: 100;
   }
   .menu {
     display: block;
-    display: flex;
+
     font-size: 20px;
     align-items: center;
+    padding-right: 10px;
   }
   .navbar {
     background-color: #ffe194;
+    padding: 20px;
   }
   .judul-nav {
     color: #f97b22;
@@ -1007,19 +1017,20 @@ footer {
     height: 40px;
     border-radius: 100%;
   }
-  .navbar .isi-nav2{
+  /* .navbar .isi-nav2{
     gap: 0;
-  }
+  } */
   .isi-nav2 {
     position: absolute;
     overflow-x: hidden;
-    left: -1000px;
+    right: 1000px;
     top: 90px;
+    height: auto;
     flex-direction: column;
     text-align: center;
 
     transition: 1.5s;
-    width: 70%;
+    width: 50%;
 
     text-align: center;
     background-color: #f5f0bb;
@@ -1030,21 +1041,33 @@ footer {
   .li-nav:active {
     background-color: #f6ffde;
   }
-  .judul-intro{
+  .judul-intro {
     font-size: 22px;
   }
-  .img-intro{
+  .img-intro {
     width: 200px;
     height: 200px;
   }
-  .card{
-  margin-left: auto;
-  margin-right: auto;
-  
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
-  .card-jumbotron-1{
+  .card-jumbotron-1 {
     flex-direction: column;
-   gap: 30px;
+    gap: 30px;
+  }
+  .description-jumbotron-1 {
+    font-size: 18px;
+  }
+
+  .judul-ipa {
+    padding: 50px 0 50px 0;
+  }
+  .img-ipa {
+    gap: 80px;
+  }
+  .img-praktek-ipa {
+    width: 300px;
   }
   .carousel {
     width: 300px;
@@ -1067,25 +1090,79 @@ footer {
     margin-left: 14px;
     width: calc(100% / 1);
   }
-  
-  .img-hari-guru-utama,
-  .img-hari-pahlawan-utama, .img-bukber-utama{
-    width: 350px;
-    height: 200px;
+  .img-guru,
+  .img-pahlawan,
+  .img-bukber {
     margin-left: auto;
     margin-right: auto;
   }
-  .content-hari-guru,
-  .content-hari-pahlawan,.content-bukber
-  {
+  .img-hari-guru-utama,
+  .img-hari-pahlawan-utama,
+  .img-bukber-utama {
     width: 350px;
     height: 200px;
- 
+    display: none;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .content-hari-guru,
+  .content-hari-pahlawan,
+  .content-bukber {
+    display: none;
+    width: 350px;
+    height: 200px;
+
     text-align: center;
-    transform: translateX(75px);
+    /* transform: translateX(75px); */
     border: 3px solid white;
   }
-  
+  .img-bukber-2,.img-pahlawan-2,.img-guru-2{
+    position: relative;
+  }
+  .img-bukber-utama-2 ,.img-hari-pahlawan-utama-2,.img-hari-guru-utama-2{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 2/2;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+  .content-bukber-2 ,.content-hari-pahlawan-2,.content-hari-guru-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity 0.5s;
+    border: 3px solid white;
+  }
+  .content-bukber--blur-2,.content-hari-pahlawan--blur-2,.content-hari-guru--blur-2{
+    backdrop-filter: blur(5px);
+  }
+  .content-bukber-2:hover{
+    opacity: 1;
+    
+  }
+  .content-hari-pahlawan-2:hover{
+    opacity: 1;
+  }
+  .content-hari-guru-2:hover{
+    opacity: 1;
+  }
+  .deskripsi-walas-2,.deskripsi-pahlawan-2,.deskripsi-bukber-2{
+    padding-top: 10px;
+  }
   .img-hari-guru {
     display: none;
   }
@@ -1097,6 +1174,9 @@ footer {
   }
   .button-hari-bukber {
     display: block;
+  }
+  .button-hari-bukber .isi-button-hari-bukber {
+    font-size: 14px;
   }
   .text-footer {
     font-size: 18px;
