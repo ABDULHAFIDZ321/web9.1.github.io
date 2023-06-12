@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .isi-navbar-pages {
     position: relative;
     text-decoration: none;
@@ -76,23 +79,26 @@
     }
     .isi-nav2-pages {
         position: absolute;
-        overflow-x: hidden;
-        right: 1000px;
+        right: 0;
         top: 80px;
-        height: auto;
+        height: 100vh;
         flex-direction: column;
         text-align: center;
-    
+        transform: translateX(100%);
         transition: 1.5s;
-        width: 50%;
-    
+        width: 65%;
+        transition: all 0.5s;
         text-align: center;
         background-color: #f5f0bb;
       }
       .li-nav-pages {
-        padding: 35px 0;
+        padding: 55px 0;
       }
       .li-nav-pages:active {
         background-color: #f6ffde;
       }
+      .slide-pages{
+        transform: translateX(0);
+      }
+      
 }

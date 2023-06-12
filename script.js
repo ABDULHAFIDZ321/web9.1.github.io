@@ -131,9 +131,11 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-const menunavbar=document.querySelector('.menu');
-const isinav=document.querySelector('.isi-nav2');
-menunavbar.addEventListener('click',function(){
+const menunavbar = document.querySelector('.menu');
+const isinav =document.querySelector('.isi-nav2');
+menunavbar.addEventListener('click', function(){
     isinav.classList.toggle('slide');
 });
+
+
 

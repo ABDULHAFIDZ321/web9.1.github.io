@@ -1035,7 +1035,7 @@ footer {
     transform: translateX(100%);
     right: 0;
     top: 80px;
-    height: auto;
+    
     flex-direction: column;
     text-align: center;
     
