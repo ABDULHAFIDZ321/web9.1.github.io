@@ -131,15 +131,9 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-var menu =document.getElementById('menu')
-menu.onclick= function(){
-    var navbar = document.querySelector('.isi-nav2');
-    navbar.classList.toggle('active');
-};
+const menunavbar=document.querySelector('.menu');
+const isinav=document.querySelector('.isi-nav2');
+menunavbar.addEventListener('click',function(){
+    isinav.classList.toggle('slide');
+});
 
-
-// var linav2 =document.querySelector('.isi-navbar');
-// linav2.onclick = function(){
-//     var isinav2 =document.querySelector('.isi-nav2');
-//     isinav2.classList.toggle('li-active');
-// };

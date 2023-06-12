@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.isi-navbar-pages {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Alkatra', cursive;
+    font-weight: 800;
+    color: rgb(255, 177, 74);
+    font-size: 20px;
+  }
+  .isi-navbar-pages::after {
+    content: '';
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .isi-navbar-pages:hover {
+    color: #ffd95a;
+  }
+  .isi-navbar-pages:hover::after {
+    width: 100%;
+  }
+  .menu-pages{
+    display: none;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+    color: black;
+  }
+@media screen and (max-width:767px){
+    .logo-nav-pages{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    .nav-pages{
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+  .navbar-pages{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        background-color: #ffe194;
+    }
+    .isi-nav1-pages{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .isi-nav1-pages .judul-nav-pages{
+        font-size: 20px;
+        font-family: 'Alkatra',sans-serif;
+        color: #f97b22;
+    }
+    .menu-pages{
+        font-size: 22px;
+        display: block;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+    .li-nav-pages{
+        list-style-type: none;
+    }
+    .isi-navbar-pages{
+        text-decoration: none;
+    }
+    .isi-nav2-pages {
+        position: absolute;
+        overflow-x: hidden;
+        right: 1000px;
+        top: 80px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    
+        transition: 1.5s;
+        width: 50%;
+    
+        text-align: center;
+        background-color: #f5f0bb;
+      }
+      .li-nav-pages {
+        padding: 35px 0;
+      }
+      .li-nav-pages:active {
+        background-color: #f6ffde;
+      }
+}
