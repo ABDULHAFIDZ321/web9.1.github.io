@@ -6,7 +6,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow-x: hidden;
 }
 .splash-screen {
@@ -338,12 +338,10 @@ header {
 }
 .content-hari-guru--blur {
   backdrop-filter: blur(5px);
- 
 }
 .content-hari-guru > * {
   transform: translateY(20px);
   transition: transform 0.5s;
-  
 }
 .content-hari-guru:hover {
   /* border: 3px solid white; */
@@ -829,7 +827,9 @@ footer {
 .wrapper-footer .youtube:hover .tooltip:before {
   background: #de463b;
 }
-.img-guru-2,.img-pahlawan-2,.img-bukber-2{
+.img-guru-2,
+.img-pahlawan-2,
+.img-bukber-2 {
   display: none;
 }
 
@@ -868,7 +868,7 @@ footer {
   }
   .isi-nav2 {
     position: absolute;
-    
+
     height: 0;
     left: 0;
     right: 0;
@@ -979,7 +979,9 @@ footer {
   .img-bukber-child {
     display: none;
   }
-  .img-guru-2,.img-pahlawan-2,.img-bukber-2{
+  .img-guru-2,
+  .img-pahlawan-2,
+  .img-bukber-2 {
     display: none;
   }
   .text-footer {
@@ -989,10 +991,11 @@ footer {
     display: flex;
     justify-content: center;
   }
-  .img-guru-2,.img-pahlawan-2,.img-bukber-2{
+  .img-guru-2,
+  .img-pahlawan-2,
+  .img-bukber-2 {
     display: none;
   }
-  
 }
 @media screen and (max-width: 767px) {
   .text-splash-screen {
@@ -1029,33 +1032,37 @@ footer {
   /* .navbar .isi-nav2{
     gap: 0;
   } */
-  .isi-nav2 {
+  .nav-menu {
     position: absolute;
-    
-    transform: translateX(100%);
-    right: 0;
+
+    /* transform: translateX(100%); */
+
+    right: -100%;
     top: 80px;
-    
+
     flex-direction: column;
     text-align: center;
-    
+
     transition: all 1s;
     width: 65%;
     height: 100vh;
     text-align: center;
     background-color: #f5f0bb;
   }
-  .slide{
-    transform: translateX(0);
+  .isi-nav2 {
+    flex-direction: column;
+  }
+  .slide {
+    /* transform: translateX(0); */
+    right: 0;
   }
   .li-nav {
     padding: 45px 0;
-   
   }
   .li-nav:active {
     background-color: #f6ffde;
   }
-  
+
   .judul-intro {
     font-size: 22px;
   }
@@ -1072,6 +1079,7 @@ footer {
     gap: 30px;
   }
   .description-jumbotron-1 {
+    padding-top: 0px;
     font-size: 18px;
   }
 
@@ -1131,24 +1139,29 @@ footer {
     /* transform: translateX(75px); */
     border: 3px solid white;
   }
-  .img-bukber-2,.img-pahlawan-2,.img-guru-2{
+  .img-bukber-2,
+  .img-pahlawan-2,
+  .img-guru-2 {
     position: relative;
-   display: block;
-   
-   margin-left: auto;
-   margin-right: auto;
-   width: 300px;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
-  .img-bukber-utama-2 ,.img-hari-pahlawan-utama-2,.img-hari-guru-utama-2{
+  .img-bukber-utama-2,
+  .img-hari-pahlawan-utama-2,
+  .img-hari-guru-utama-2 {
     width: 300px;
     height: 200px;
     object-fit: cover;
     aspect-ratio: 2/2;
     border-radius: 20px;
     border: 3px solid white;
-    
   }
-  .content-bukber-2 ,.content-hari-pahlawan-2,.content-hari-guru-2{
+  .content-bukber-2,
+  .content-hari-pahlawan-2,
+  .content-hari-guru-2 {
     position: absolute;
     left: 0;
     top: 0;
@@ -1163,26 +1176,29 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     opacity: 0;
     transition: opacity 0.5s;
     border: 3px solid white;
   }
-  .content-bukber--blur-2,.content-hari-pahlawan--blur-2,.content-hari-guru--blur-2{
+  .content-bukber--blur-2,
+  .content-hari-pahlawan--blur-2,
+  .content-hari-guru--blur-2 {
     backdrop-filter: blur(5px);
   }
-  .content-bukber-2:hover{
-    opacity: 1;
-    
-  }
-  .content-hari-pahlawan-2:hover{
+  .content-bukber-2:hover {
     opacity: 1;
   }
-  .content-hari-guru-2:hover{
+  .content-hari-pahlawan-2:hover {
     opacity: 1;
   }
-  
-  .deskripsi-walas-2,.deskripsi-pahlawan-2,.deskripsi-bukber-2{
+  .content-hari-guru-2:hover {
+    opacity: 1;
+  }
+
+  .deskripsi-walas-2,
+  .deskripsi-pahlawan-2,
+  .deskripsi-bukber-2 {
     padding-top: 10px;
   }
   .img-hari-guru {
@@ -1208,6 +1224,4 @@ footer {
     gap: 50px;
     text-align: center;
   }
-
-  
 }

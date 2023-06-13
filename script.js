@@ -132,12 +132,20 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
 const menunavbar = document.querySelector('.menu');
-const isinav =document.querySelector('.isi-nav2');
+const navMenu =document.querySelector('.nav-menu');
 menunavbar.addEventListener('click', function(){
-    isinav.classList.toggle('slide');
+    navMenu.classList.toggle('slide');
 });
 
+// const isiNavbar=document.querySelectorAll('.isi-navbar');
+// isiNavbar.addEventListener('click',function(){
+//     isinav.classList.toggle('slide-remove');
+// });
 
+const navLink=document.querySelectorAll('.isi-navbar')
 
-
-
+function linkAction(){
+   
+    navMenu.classList.remove('slide');
+}
+navLink.forEach(e=>e.addEventListener('click',linkAction));

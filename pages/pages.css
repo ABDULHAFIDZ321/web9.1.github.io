@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
@@ -198,14 +201,14 @@ footer {
     .isi-navbar-pages{
         text-decoration: none;
     }
-    .isi-nav2-pages {
+    .nav-menu-pages {
         position: absolute;
-        right: 0;
+        right: -100%;
         top: 80px;
         height: 100vh;
         flex-direction: column;
         text-align: center;
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
         transition: 1.5s;
         width: 65%;
         transition: all 0.5s;
@@ -219,7 +222,8 @@ footer {
         background-color: #f6ffde;
       }
       .slide-pages{
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        right: 0;
       }
      
       .foto-swiper{
@@ -237,7 +241,7 @@ footer {
       .swiper .swiper-pagination-bullet-active{
         background-color: #F29727;
       }
-      .all-foto-guru{
+      .all-foto-guru,.all-foto-bukber{
         background-color: #FCFFB2;
         padding: 30px 0;
       }
@@ -249,7 +253,7 @@ footer {
        width: 350px;
         flex-direction: column;
       }
-      .foto-murid-hari-guru{
+      .foto-murid-hari-guru,.foto-murid-hari-bukber{
         width: 350px;
         object-fit: contain;
         /* aspect-ratio: 3/2; */

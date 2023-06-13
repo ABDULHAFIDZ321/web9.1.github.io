@@ -1,9 +1,16 @@
 
 const menunavbar2 = document.querySelector('.menu-pages');
-const isinav2 = document.querySelector('.isi-nav2-pages');
+const navMenu2 = document.querySelector('.nav-menu-pages');
 menunavbar2.addEventListener('click',function(){
-    isinav2.classList.toggle('slide-pages');
+    navMenu2.classList.toggle('slide-pages');
 });
+const navLink =document.querySelectorAll('.isi-navbar-pages')
+
+function linkAction(){
+   
+    navMenu2.classList.remove('slide-pages');
+}
+navLink.forEach(e=>e.addEventListener('click',linkAction));
 
 const mySwiper = new Swiper('#swiper-1',{
    effect : 'fade',
