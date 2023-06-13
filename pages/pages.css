@@ -37,6 +37,127 @@ body{
     cursor: pointer;
     color: black;
   }
+  
+footer {
+  text-align: center;
+
+  background-color: #f0eb8d;
+}
+.text-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  padding: 50px;
+}
+
+.last-text-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: rgb(255, 145, 0);
+  padding-top: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 60px;
+}
+
+.wrapper-footer {
+  display: inline-flex;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px;
+}
+.wrapper-footer .icon {
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon .span-footer {
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon .span-footer #i-footer {
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper-footer .icon .tooltip {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .icon:hover .span-footer {
+  color: #fff;
+}
+.wrapper-footer .icon:hover .span-footer,
+.wrapper-footer .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper-footer .facebook:hover .span-footer,
+.wrapper-footer .facebook:hover .tooltip,
+.wrapper-footer .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.wrapper-footer .twitter:hover .span-footer,
+.wrapper-footer .twitter:hover .tooltip,
+.wrapper-footer .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.wrapper-footer .WhatsApp:hover .span-footer,
+.wrapper-footer .WhatsApp:hover .tooltip,
+.wrapper-footer .WhatsApp:hover .tooltip:before {
+  background: #1be046;
+}
+.wrapper-footer .instagram:hover .span-footer,
+.wrapper-footer .instagram:hover .tooltip,
+.wrapper-footer .instagram:hover .tooltip:before {
+  background: #e1306c;
+}
+.wrapper-footer .youtube:hover .span-footer,
+.wrapper-footer .youtube:hover .tooltip,
+.wrapper-footer .youtube:hover .tooltip:before {
+  background: #de463b;
+}
+.img-guru-2,.img-pahlawan-2,.img-bukber-2{
+  display: none;
+}
+
 @media screen and (max-width:767px){
     .logo-nav-pages{
         width: 40px;
@@ -100,5 +221,44 @@ body{
       .slide-pages{
         transform: translateX(0);
       }
-      
+     
+      .foto-swiper{
+        width: 100vw;
+        padding-top: 80px;
+        object-fit: cover;
+      }
+      .swiper .swiper-pagination-bullet{
+        opacity: 1;
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        
+      }
+      .swiper .swiper-pagination-bullet-active{
+        background-color: #F29727;
+      }
+      .all-foto-guru{
+        padding: 80px 0;
+      }
+      .isi-foto{
+       
+        flex-direction: column;
+      }
+      .foto-murid-hari-guru{
+        width: 350px;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+        border-radius: 20px;
+        margin: 20px 0;
+      }
+    
+      .text-footer {
+        font-size: 18px;
+      }
+      .wrapper-footer {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+      }
+    
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/pages.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/pages.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,40 +13,102 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mulish:wght@300&family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="fontawesome/css/all.css" type="text/css" />
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <section id="home-pages">
-            <nav id="nav-pages" class="nav-pages">
-              <div class="navbar-pages">
-                <div class="isi-nav1-pages">
-                  <img class="logo-nav-pages" src="images/logo.jpg" alt="" />
-                  <h2 class="judul-nav-pages">the invicibles 9.1</h2>
-                </div>
-    
-                <ul class="isi-nav2-pages">
-                  <li class="li-nav-pages"><a class="isi-navbar-pages" href="index.html">Home</a></li>
-                  <li class="li-nav-pages"><a class="isi-navbar-pages" href="#jumbotron-1">Memory</a></li>
-                  <li class="li-nav-pages"><a class="isi-navbar-pages" href="#home">All-photo</a></li>
-                </ul>
-    
-                <div id="menu-pages" class="menu-pages"><i class="fa-solid fa-bars"></i></div>
-              </div>
-            </nav>
-          </section>
+      <section id="home-pages">
+        <nav id="nav-pages" class="nav-pages">
+          <div class="navbar-pages">
+            <div class="isi-nav1-pages">
+              <img class="logo-nav-pages" src="images/logo.jpg" alt="" />
+              <h2 class="judul-nav-pages">the invicibles 9.1</h2>
+            </div>
+
+            <ul class="isi-nav2-pages">
+              <li class="li-nav-pages"><a class="isi-navbar-pages" href="index.html">Home</a></li>
+              <li class="li-nav-pages"><a class="isi-navbar-pages" href="">Foto</a></li>
+              <li class="li-nav-pages"><a class="isi-navbar-pages" href="">All-photo</a></li>
+            </ul>
+
+            <div id="menu-pages" class="menu-pages"><i class="fa-solid fa-bars"></i></div>
+          </div>
+        </nav>
+      </section>
     </header>
     <main>
-      <section></section>
+      <section class="foto-hari-guru">
+        <div class="swiper" id="swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="foto-swiper" src="images/hari-guru/hari-guru-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="foto-swiper" src="images/hari-guru/hari-guru-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="foto-swiper" src="images/hari-guru/hari-guru-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="foto-swiper" src="images/hari-guru/hari-guru-4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="foto-swiper" src="images/hari-guru/hari-guru-5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="all-foto-guru">
+        <div class="isi-foto">
+         <img class="foto-murid-hari-guru" src="images/hari-guru/hari-guru-1.jpg" alt="">
+         <img class="foto-murid-hari-guru" src="images/hari-guru/hari-guru-2.jpg" alt="">
+         <img class="foto-murid-hari-guru" src="images/hari-guru/hari-guru-3.jpg" alt="">
+         <img class="foto-murid-hari-guru" src="images/hari-guru/hari-guru-4.jpg" alt="">
+         <img class="foto-murid-hari-guru" src="images/hari-guru/hari-guru-5.jpg" alt="">
+        </div>
+      </section>
     </main>
-    <footer>
 
-    </footer>
+      <footer id="footer">
+        <article class="footer">
+          <h2 class="text-footer" >semoga website ini bisa menjadi kenangan untuk kita semua</h2>
+        </article>
+        
+        <div class="wrapper-footer" >
+         
+          <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span class="span-footer"><i id="i-footer" class="fab fa-instagram"></i></span>
+          </div>
+          <div class="icon WhatsApp">
+            <div class="tooltip">WhatsApp</div>
+            <span class="span-footer"><i id="i-footer" class="fab fa-whatsapp"></i></span>
+          </div>
+          <div class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span class="span-footer"><i id="i-footer" class="fab fa-facebook-f"></i></span>
+          </div>
+          <!-- <div class="icon twitter">
+            <div class="tooltip">Twitter</div>
+            <span class="span-footer"><i id="i-footer" class="fab fa-twitter"></i></span>
+          </div> -->
+         
+  
+          <!-- <div class="icon youtube">
+            <div class="tooltip">YouTube</div>
+            <span class="span-footer"><i id="i-footer" class="fab fa-youtube"></i></span>
+          </div> -->
+        </div>
+        <article class="footer">
+          <h2 class="last-text-footer">thank youuuuuuuuu</h2>
+        </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="pages/pages.js"></script>
-</body>
+  </body>
 </html>
