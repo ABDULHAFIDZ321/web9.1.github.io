@@ -238,19 +238,60 @@ footer {
         background-color: #F29727;
       }
       .all-foto-guru{
-        padding: 80px 0;
+        background-color: #FCFFB2;
+        padding: 30px 0;
       }
       .isi-foto{
-       
+       display: block;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: auto;
+       width: 350px;
         flex-direction: column;
       }
       .foto-murid-hari-guru{
         width: 350px;
-        object-fit: cover;
-        aspect-ratio: 3/2;
+        object-fit: contain;
+        /* aspect-ratio: 3/2; */
         border-radius: 20px;
-        margin: 20px 0;
+        margin: 10px 0;
       }
+      .div-button-home{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .button-home{
+        
+        background-color: white;
+        color: black;
+        
+        border-radius: 10em;
+        font-size: 17px;
+        font-weight: 600;
+        padding: 1em 2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid black;
+        box-shadow: 0 0 0 0 black;
+      }
+      
+      .button-home:hover {
+        transform: translateY(-4px) translateX(-2px);
+        box-shadow: 2px 5px 0 0 black;
+      }
+      
+      .button-home:active {
+        transform: translateY(2px) translateX(1px);
+        box-shadow: 0 0 0 0 black;
+      }
+      .isi-button-home{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: black;
+      }
+      
+      
     
       .text-footer {
         font-size: 18px;

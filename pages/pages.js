@@ -15,5 +15,6 @@ const mySwiper = new Swiper('#swiper-1',{
     delay:2500,
    },
    loop:true,
+   disableOnInteraction	:false,
 
 });
