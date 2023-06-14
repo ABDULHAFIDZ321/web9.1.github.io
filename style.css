@@ -1015,7 +1015,7 @@ footer {
   }
   .navbar {
     background-color: #ffe194;
-    padding: 20px;
+    padding: 15px;
   }
   .judul-nav {
     color: #f97b22;
@@ -1038,13 +1038,13 @@ footer {
     /* transform: translateX(100%); */
 
     right: -100%;
-    top: 80px;
+    top: 70px;
 
     flex-direction: column;
     text-align: center;
 
     transition: all 1s;
-    width: 65%;
+    width: 60%;
     height: 100vh;
     text-align: center;
     background-color: #f5f0bb;

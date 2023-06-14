@@ -175,7 +175,7 @@ footer {
   .navbar-pages{
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: 15px;
         justify-content: space-between;
         background-color: #ffe194;
     }
@@ -204,7 +204,7 @@ footer {
     .nav-menu-pages {
         position: absolute;
         right: -100%;
-        top: 80px;
+        top: 70px;
         height: 100vh;
         flex-direction: column;
         text-align: center;
@@ -228,7 +228,7 @@ footer {
      
       .foto-swiper{
         width: 100vw;
-        padding-top: 80px;
+        padding-top: 70px;
         object-fit: cover;
       }
       .swiper .swiper-pagination-bullet{
