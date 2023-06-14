@@ -719,7 +719,7 @@ footer {
 .text-footer {
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .last-text-footer {
@@ -735,7 +735,7 @@ footer {
 .wrapper-footer {
   display: inline-flex;
   font-family: 'Poppins', sans-serif;
-  padding: 60px;
+  padding: 50px;
 }
 .wrapper-footer .icon {
   margin: 0 20px;
@@ -832,7 +832,15 @@ footer {
 .img-bukber-2 {
   display: none;
 }
-
+.text-instagram{
+  font-size: 22px;
+  font-family: 'Poppins',sans-serif;
+  text-transform: capitalize;
+}
+.fa-arrow-down{
+  font-size: 22px;
+  padding-top: 30px;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .text-splash-screen {
     font-size: 30px;
@@ -1064,8 +1072,10 @@ footer {
   }
 
   .judul-intro {
-    font-size: 22px;
+    font-size: 20px;
+    padding: 50px 0;
   }
+  
   .img-intro {
     width: 200px;
     height: 200px;
@@ -1223,5 +1233,16 @@ footer {
     flex-direction: column;
     gap: 50px;
     text-align: center;
+  }
+}
+@media screen and (max-width:320px){
+  .judul-intro{
+    font-size: 20px;
+  }
+  .text-instagram{
+    font-size: 19px;
+  }
+  .last-text-footer{
+    font-size: 20px;
   }
 }

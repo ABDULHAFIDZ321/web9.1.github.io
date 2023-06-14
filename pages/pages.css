@@ -65,7 +65,7 @@ footer {
 .wrapper-footer {
   display: inline-flex;
   font-family: 'Poppins', sans-serif;
-  padding: 60px;
+  padding: 40px;
 }
 .wrapper-footer .icon {
   margin: 0 20px;
@@ -160,6 +160,15 @@ footer {
 .img-guru-2,.img-pahlawan-2,.img-bukber-2{
   display: none;
 }
+.text-instagram{
+  font-size: 22px;
+  font-family: 'Poppins',sans-serif;
+  text-transform: capitalize;
+}
+.fa-arrow-down{
+  font-size: 22px;
+  padding-top: 30px;
+}
 
 @media screen and (max-width:767px){
     .logo-nav-pages{
@@ -217,6 +226,7 @@ footer {
       }
       .li-nav-pages {
         padding: 55px 0;
+        border: 2px solid white;
       }
       .li-nav-pages:active {
         background-color: #f6ffde;
@@ -306,4 +316,18 @@ footer {
         text-align: center;
       }
     
+}
+@media screen and (max-width:320px){
+  .foto-murid-hari-guru,.foto-murid-hari-bukber{
+    width: 280px;
+  }
+.isi-foto{
+  width: 280px;
+}
+  .text-instagram{
+    font-size: 19px;
+  }
+  .last-text-footer{
+    font-size: 20px;
+  }
 }
