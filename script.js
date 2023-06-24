@@ -131,16 +131,18 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-const menunavbar = document.querySelector('.menu');
-const navMenu =document.querySelector('.nav-menu');
-menunavbar.addEventListener('click', function(){
-    navMenu.classList.toggle('slide');
-});
-
-// const isiNavbar=document.querySelectorAll('.isi-navbar');
-// isiNavbar.addEventListener('click',function(){
-//     isinav.classList.toggle('slide-remove');
+// const menunavbar = document.querySelector('.menu');
+// const navMenu =document.querySelector('.nav-menu');
+// menunavbar.addEventListener('click', function(){
+//     navMenu.classList.toggle('slide');
 // });
+
+const navMenu =document.querySelector('.nav-menu');
+const toogle =document.querySelector('.menu-toogle');
+toogle.addEventListener('click', function () {
+    navMenu.classList.toggle('slide');
+
+});
 
 const navLink=document.querySelectorAll('.isi-navbar')
 

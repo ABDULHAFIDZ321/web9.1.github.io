@@ -841,6 +841,10 @@ footer {
   font-size: 22px;
   padding-top: 30px;
 }
+.menu-toogle{
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .text-splash-screen {
     font-size: 30px;
@@ -1015,11 +1019,26 @@ footer {
     z-index: 100;
   }
   .menu {
-    display: block;
+    display: none;
 
     font-size: 20px;
     align-items: center;
     padding-right: 10px;
+  }
+  .menu-toogle{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    padding-right: 10px;
+  }
+  .menu-toogle .span-menu-toogle{
+    display: block;
+    width: 28px;
+    height: 3px ;
+    background-color: black;
+    border-radius: 10px;
   }
   .navbar {
     background-color: #ffe194;
@@ -1037,13 +1056,8 @@ footer {
     height: 40px;
     border-radius: 100%;
   }
-  /* .navbar .isi-nav2{
-    gap: 0;
-  } */
   .nav-menu {
     position: absolute;
-
-    /* transform: translateX(100%); */
 
     right: -100%;
     top: 70px;
@@ -1061,7 +1075,6 @@ footer {
     flex-direction: column;
   }
   .slide {
-    /* transform: translateX(0); */
     right: 0;
   }
   .li-nav {
